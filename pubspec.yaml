@@ -10,6 +10,8 @@ dependencies:
   cupertino_icons: ^0.1.2
   hooks_riverpod: ^0.6.1
   flutter_hooks: ^0.13.1
+  shared_preferences:
+  state_notifier:
 dev_dependencies:
   flutter_test:
     sdk: flutter
