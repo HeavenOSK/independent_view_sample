@@ -1,0 +1,17 @@
+name: independent_view_sample
+description: A new Flutter application.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^0.1.2
+  hooks_riverpod: ^0.6.1
+  flutter_hooks: ^0.13.1
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:
+  uses-material-design: true
