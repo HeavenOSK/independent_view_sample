@@ -22,7 +22,6 @@ class CountController extends StateNotifier<CountState> {
   }
 
   void _load() async {
-    await Future.delayed(const Duration(seconds: 5));
     final count = (await _countRepository.getCount()) ?? 0;
     state = state.copyWith(
       loading: false,
@@ -37,6 +36,9 @@ class CountController extends StateNotifier<CountState> {
     state = state.copyWith(
       count: state.count + 1,
     );
+  }
+
+  void save() {
     _countRepository.saveCount(state.count);
   }
 }

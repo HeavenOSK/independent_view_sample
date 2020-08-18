@@ -15,6 +15,14 @@ class CounterPage extends HookWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Flutter '),
+        actions: [
+          RaisedButton(
+            onPressed: () {
+              controller.save();
+            },
+            child: Text('Save'),
+          ),
+        ],
       ),
       body: loading ? Center(child: CircularProgressIndicator()) : _Content(),
       floatingActionButton: loading
